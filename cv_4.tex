@@ -1,0 +1,118 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\usepackage{hyperref}
+\usepackage{fontawesome}
+\usepackage[misc]{ifsym}
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\name{Pushpankar Kumar} % Your name
+\address{\faEnvelope\hspace{.25em} \href{mailto:pushpankark@gmail.com}{ pushpankark@gmail.com} \faPhone \hspace{.25em} +91-9572222953 \hspace{.5em}\href{https://www.linkedin.com/in/pushpankar}{\faLinkedin}\hspace{.5em} \href{https://github.com/pushpankar}{ \faGithub}} % Your address
+%\address{123 Pleasant Lane \\ City, State 12345} % Your secondary addess (optional)
+%\address{(+1)~7hh~9~8486 \\ x@ii.yzac.in} % Your phone number and email
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Skills}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l @{\hspace{6ex}} l }
+Expert &  Natural Language Processing & Pytorch, Python, Linux  \\
+Proficient & Computer Vision, Algorithms \& Data structures & Tensorflow, C/C++, Java \\
+Beginner & Android development, Web development & JavaScript, SQL, Elixir \\
+\end{tabular}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Experience}
+\begin{rSubsection}{EdgeNetworks}{May 2018 - Present}{Data Scientist}{}
+\item Developed a information retrieval system to rank resumes for a JD and achieved 82.51\% NDCG@20
+\item Built a knowledge graph incorporating 30000+ titles, 70000+ skills and 100+ industries.
+\item Did knowledge base completion using ComplEx tensor factorization, SVD, and other techniques.
+\end{rSubsection}
+
+
+\begin{rSubsection}{ParallelDots}{July 2017 - May 2018}{Data Scientist}{}
+\item Developed a multi-task learning algorithm with self-attention mechanism to classify emotion, intent, and sentiment. Achieved 80\% accuracy for ternary sentiment classification.
+\item Implemented a aspect based sentiment classifier and achieved state-of-the-art level accuracy.
+\item Improved accuracy of sentiment, emotion, and intent classification by upto 8\% using transfer learning.
+\item Develop unsupervised model in Tensorflow to find topics in a document and similar document using LDA2vec.
+\end{rSubsection}
+
+\end{rSection}
+
+\begin{rSection}{Paper}
+\begin{rSubsection}{\href{https://arxiv.org/abs/1712.05972}{\textbf{Train Once, Test Anywhere: Zero-Shot Learning for Text Classification}  }}{}{}{}
+\item Developed a new technique for classifying text by just having the definition of classes.
+\item Achieved results comparable to supervised ML techniques and showcased the potential of vast amount of noisy data.
+\end{rSubsection}
+\end{rSection}
+
+\begin{rSection}{Projects}
+\begin{rSubsection}{}{}{}{}
+\item Developed group study platform as a part of YCombinator's Startup School program.
+\item Developed social media platform for sharing election news and memes using techonologies like Elixir, GraphQL, and ReactJS.
+\end{rSubsection}
+\end{rSection}
+
+
+%----------------------------------------------------------------------------------------
+% \begin{rSection}{Relevant Courses}
+% \itab{\textbf{Core Courses}} \tab{}  \tab{\textbf{Other Courses}}
+% \\ \itab{Fluid Mechanics \& its applications } \tab{}  \tab{Computational Methods in Engineering}
+% \\ \itab{Thermodynamics} \tab{}  \tab{Fundamental of Computing} 
+% \\ \itab{Heat Transfer \& its applications} \tab{}  \tab{Probability and Statistics} 
+% \\ \itab{Mass Transfer \& its applications} \tab{} \tab{Calculus \& Linear Algebra}
+% \\ \itab{Transport Phenomena (ongoing)} \tab{} \tab{Introduction to Mechanics}
+% % \\ \itab{Process Control (ongoing)} \tab{} \tab{Electrodynamics}
+% \end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+
+{\bf National Institute of Technology Srinagar} \hfill {\em August 2013 - July 2017} \\
+Metallurgical and Material Engineering  \\
+% \\ B.Tech, 7.2 CGPA \\
+\\
+{\bf Udacity } \hfill {\em Dec 2016 - Feb 2017}\\
+Machine learning Nanodegree\\
+Topics Covered - Supervised learning, Unsupervised Learning, Reinforcement Learning, Deep Learning\\
+\\
+{\bf Relevant MOOCs }\textit{ (uncertified)}\\
+Stanford CS224D (NLP), Stanford CS231N (Computer Vision), Algorithms(MIT OCW)
+
+\end{rSection}
+
+\end{document}
